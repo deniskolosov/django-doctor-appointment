@@ -18,6 +18,6 @@ sudo apt-get -y install python3-pip
 sudo pip3 install -r requirements.txt
 
 cd polyclinic/
-python manage.py makemigrations
-python manage.py migrate
-python manage.py runserver 0.0.0.0:80
+python3.4 manage.py makemigrations
+python3.4 manage.py migrate
+python3.4 manage.py runserver 0.0.0.0:80
