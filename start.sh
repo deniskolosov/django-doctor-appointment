@@ -12,11 +12,12 @@ tar xJf ./Python-3.4.3.tar.xz
 cd ./Python-3.4.3
 ./configure --prefix=/opt/python3.4
 make && sudo make install
+cd ..
 
 sudo apt-get -y install python3-pip
-
-cd ../polyclinic/
 sudo pip3 install -r requirements.txt
+
+cd polyclinic/
 python manage.py makemigrations
 python manage.py migrate
 python manage.py runserver 0.0.0.0:80
