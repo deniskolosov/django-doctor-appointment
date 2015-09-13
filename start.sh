@@ -15,10 +15,7 @@ make && sudo make install
 
 sudo apt-get install python3-pip
 
-sudo apt-get install git
-
-git clone https://github.com/thefivekey/django-doctor-appointment.git
-cd django-doctor-appointment/polyclinic/
+cd polyclinic/
 sudo pip3 install -r requirements.txt
 python manage.py makemigrations
 python manage.py migrate
