@@ -38,6 +38,8 @@ INSTALLED_APPS = (
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'appointments',
+    'bootstrap3',
+    'datetimewidget',
 )
 
 MIDDLEWARE_CLASSES = (
@@ -99,5 +101,8 @@ USE_TZ = True
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/1.8/howto/static-files/
+BOOTSTRAP3 = {
+        'jquery_url': '//code.jquery.com/jquery.min.js',
+        }
 
 STATIC_URL = '/static/'
